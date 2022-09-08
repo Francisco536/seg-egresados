@@ -11,9 +11,9 @@
 
 @section('content')
     <div class="card">
-        <div class="card-header">
+        {{-- <div class="card-header">
             <div class="alert alert-success hide"></div>
-        </div>
+        </div> --}}
         <div class="card-body">
             <div class="container">
 
@@ -21,7 +21,7 @@
                 <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 {{-- <div class="alert alert-success hide"></div> novalidate --}}
-                <form id="register_form" action="{{ route('store.encuesta') }}" method="POST">
+                <form id="register_form" action="{{ route('store.encuesta') }}" method="POST" novalidate>
                     @csrf
                 <fieldset>
                     <br>

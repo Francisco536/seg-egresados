@@ -35,14 +35,14 @@ return new class extends Migration
             $table->string('ingles');
             $table->string('manejo_paquetes');
 
-            $table->string('calidad_docent');
-            $table->string('plan_estudios');
-            $table->string('opor_partic_proyectos');
-            $table->string('enfasis_investig');
-            $table->string('infraestructura');
-            $table->string('exp_rec_prof');
+            $table->string('calidad_docent')->nullable();
+            $table->string('plan_estudios')->nullable();
+            $table->string('opor_partic_proyectos')->nullable();
+            $table->string('enfasis_investig')->nullable();
+            $table->string('infraestructura')->nullable();
+            $table->string('exp_rec_prof')->nullable();
 
-            $table->string('actividad_actual');
+            $table->string('actividad_actual')->nullable();
             $table->string('si_estudia')->nullable();
             $table->string('especialidad_estud')->nullable();
             $table->string('tiemp_obte_empleo')->nullable();
@@ -85,18 +85,18 @@ return new class extends Migration
             $table->text('cap_liderazgo')->nullable();
             $table->text('otros')->nullable();
 
-            $table->text('curso_actu');
+            $table->text('curso_actu')->nullable();
             $table->text('name_curso')->nullable();
-            $table->text('postgrado');
+            $table->text('postgrado')->nullable();
             $table->text('name_postgrado')->nullable();
-            $table->text('comp_exper');
+            $table->text('comp_exper')->nullable();
             $table->text('name_experiencia')->nullable();
-            $table->text('org_sociales');
+            $table->text('org_sociales')->nullable();
             $table->text('name_org')->nullable();
-            $table->text('org_profec');
+            $table->text('org_profec')->nullable();
             $table->text('name_orgProf')->nullable();
-            $table->text('asoc_egresados');
-            $table->text('op_final');
+            $table->text('asoc_egresados')->nullable();
+            $table->text('op_final')->nullable();
 
             $table->string('id_user');
             $table->timestamps();
